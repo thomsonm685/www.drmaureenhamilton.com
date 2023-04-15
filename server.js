@@ -13,7 +13,7 @@ app.use(express.static('public'))
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
-});
+}); 
 
 app.get('/events', function(req, res) {
     res.sendFile(path.join(__dirname, '/front-end/www.brysonstavern.com/events.html'));
